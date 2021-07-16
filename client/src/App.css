@@ -175,9 +175,14 @@ a:hover{
 .nav{
   display: flex;
   flex-direction: row;
+
 }
 .nav li{
   padding:10px;
+  
+}.nav li:hover{
+  background-color: rgb(13, 77, 141);
+  cursor: pointer;
 }
 .logo{
   font-weight: bold;
@@ -195,7 +200,16 @@ a:hover{
 .link-css:hover{
   text-decoration: none;
 }
-ul li:hover {
-  background-color: rgb(13, 77, 141);
-  cursor: pointer;
+
+.sub-nav-con{
+  margin-top: 20px;
+  display:flex;  
+  justify-content: center;
+    
+}
+.sub-nav a{
+  color:black;
+}
+.sub-nav a:hover{
+  text-decoration: underline;
 }

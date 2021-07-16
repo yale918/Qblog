@@ -40,6 +40,16 @@ function App() {
               <Profile />
             </Route>
 
+            <Route path="/layout">
+              <div className="sub-nav-con">
+                <div>上傳中　 </div>
+                <div class="sub-nav">
+                  <a href="#1" className="link-css" >PS4 clone </a>  |
+                  <a href="#2" className="link-css" > NETFLIX clone </a>  |
+                  <a href="#3" className="link-css" > Discuz clone</a>  
+                </div>
+              </div>
+            </Route>
             <Route path="/blog">...部落格 施工中...</Route>
 
           </section>
