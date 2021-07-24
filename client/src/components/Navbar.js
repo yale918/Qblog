@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const navCol1 = (flag) => {
     const subL = document.querySelector('.subLinks1')
-    if(flag==='show'){
+    if (flag === 'show') {
       console.log("show block 1")
       subL.children[0].classList.remove('hidden')
       subL.children[1].classList.remove('hidden')
@@ -19,7 +19,7 @@ const NavBar = () => {
 
   }
   const navCol2 = (flag) => {
-    if(flag==="show"){
+    if (flag === "show") {
       console.log("enter block: 2")
       const subL2 = document.querySelector('.subLinks2')
       //console.log("subL: ", subL)
@@ -28,12 +28,12 @@ const NavBar = () => {
       //console.log("subL child:", subL.children[0].children[0])
       subL2.classList.add('show')
     }
-    else{
+    else {
       console.log("hide navCol2")
     }
   }
   const navCol3 = (flag) => {
-    if(flag==="show"){
+    if (flag === "show") {
       console.log("enter block: 3")
       const subL2 = document.querySelector('.subLinks3')
       //console.log("subL: ", subL)
@@ -43,9 +43,9 @@ const NavBar = () => {
       //console.log("subL child:", subL.children[0].children[0])
       subL2.classList.add('show')
     }
-    else if(flag==="hidden"){
+    else if (flag === "hidden") {
       console.log("hide navCol3")
-      
+
     }
   }
 
@@ -63,13 +63,16 @@ const NavBar = () => {
                 <div className="hidden"><Link className="link-css" to='/eng_profile'>Eng. CV</Link></div>
               </div>
             </li>
+            {/* 
             <li onMouseEnter={() => { navCol2('show') }}>
               <div className="link-title-css" to='/layout'>切版練習▼</div>
               <div className="subLinks2">
-              <div className="hidden"><a className="link-css" href="#" >PS5練習</a></div>
-              <div className="hidden"><a className="link-css" href="#" >Netflix練習</a></div>
+                <div className="hidden"><a className="link-css" href="#" >PS5練習</a></div>
+                <div className="hidden"><a className="link-css" href="#" >Netflix練習</a></div>
               </div>
-              </li>
+            </li>
+            */}
+            
             <li onMouseEnter={() => { navCol3('show') }}>
               <div className="link-title-css" >網站作品▼</div>
               <div className="subLinks3">
@@ -79,9 +82,9 @@ const NavBar = () => {
                 <div className="hidden"><Link className="link-css" to='/qblog'>qb部落格(x)</Link></div>
                 <div className="hidden"><Link className="link-css" to='/qadmin'>qa後台系統(x)</Link></div>
                  */}
-                
+
               </div>
-              </li>
+            </li>
           </ul>
           <div className="logo"><Link to="/blog" className="link-css">部落格</Link> </div>
         </div>
