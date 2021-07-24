@@ -3,7 +3,7 @@ import ig1 from './images/ig1.png'
 import fb from './images/fb.png'
 import ig from './images/ig.png'
 import tw from './images/tw.png'
-
+import './profile.css'
 
 
 const Profile = () => {

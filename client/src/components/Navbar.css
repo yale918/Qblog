@@ -1,0 +1,53 @@
+.mynav{
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  background-color: dodgerblue;
+  margin-bottom: 30px;
+
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+}
+.nav li{
+  padding:10px;
+  height:220px;
+}.nav li:hover{
+  background-color: rgb(13, 77, 141);
+  cursor:default;
+}
+.logo{
+  font-weight: bold;
+  line-height:30px;
+  padding:10px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+
+.sublinks1{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden; 
+  margin-top:10px;
+}
+.sublinks2{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden; 
+  margin-top:10px;
+}
+.sublinks3{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden; 
+  margin-top:10px;
+}
+.hidden{
+  visibility:hidden;
+}
+.show{
+  visibility:visible;
+  color:red
+}
