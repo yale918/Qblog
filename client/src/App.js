@@ -27,7 +27,7 @@ function App() {
       <div className="App">
         { /*<input type="button" value="api測試" onClick={() => { btn() }} />*/}
         <section className="main">
-          <Route path="/main_profile">
+          <Route exact path="/main_profile">
             <Profile />
           </Route>
           <Route path="/eng_profile">
