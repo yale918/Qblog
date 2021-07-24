@@ -39,8 +39,7 @@ const NavBar = () => {
       //console.log("subL: ", subL)
       subL2.children[0].classList.remove('hidden')
       subL2.children[1].classList.remove('hidden')
-      subL2.children[2].classList.remove('hidden')
-      subL2.children[3].classList.remove('hidden')
+
       //console.log("subL child:", subL.children[0].children[0])
       subL2.classList.add('show')
     }
@@ -50,7 +49,6 @@ const NavBar = () => {
     }
   }
 
-
   return (
     <>
       {//<div id="cv" onClick={() => { popup()}}>click</div>//
@@ -58,7 +56,6 @@ const NavBar = () => {
       <Route>
         <div className="mynav">
           <ul className="nav">
-
             <li onMouseEnter={() => { navCol1('show') }} onMouseOut={() => { navCol1('hidden') }}>
               <div className="link-title-css" to='/profile'>CV履歷▼</div>
               <div className="subLinks1">
@@ -66,12 +63,11 @@ const NavBar = () => {
                 <div className="hidden"><Link className="link-css" to='/eng_profile'>Eng. CV</Link></div>
               </div>
             </li>
-
             <li onMouseEnter={() => { navCol2('show') }}>
               <div className="link-title-css" to='/layout'>切版練習▼</div>
               <div className="subLinks2">
-              <div className="hidden"><a className="link-css" href="https://igclone918.herokuapp.com" target="_blank" rel="noreferrer">PS5練習</a></div>
-              <div className="hidden"><a className="link-css" href="https://igclone918.herokuapp.com" target="_blank" rel="noreferrer">Netflix練習</a></div>
+              <div className="hidden"><a className="link-css" href="#" >PS5練習</a></div>
+              <div className="hidden"><a className="link-css" href="#" >Netflix練習</a></div>
               </div>
               </li>
             <li onMouseEnter={() => { navCol3('show') }}>
@@ -79,8 +75,11 @@ const NavBar = () => {
               <div className="subLinks3">
                 <div className="hidden"><a className="link-css" href="https://igclone918.herokuapp.com" target="_blank" rel="noreferrer">qp社群網站</a></div>
                 <div className="hidden"><a className="link-css" href="https://qdoc918.herokuapp.com" target="_blank" rel="noreferrer">qd雲端共筆</a></div>
+                {/*
                 <div className="hidden"><Link className="link-css" to='/qblog'>qb部落格(x)</Link></div>
                 <div className="hidden"><Link className="link-css" to='/qadmin'>qa後台系統(x)</Link></div>
+                 */}
+                
               </div>
               </li>
           </ul>
